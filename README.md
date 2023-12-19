@@ -5,4 +5,4 @@ Yolov8 detection + Sort tracking.
 - python 3.8
 - requirements.txt
 
-  # Sort
+# Sort
