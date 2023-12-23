@@ -1,12 +1,5 @@
 # Person-counting-and-monitoring-using-jetson-nano
-Yolov8 detection + Sort tracking.
-
-
-
-
-![Uploading image.png…]()
-
-
+Yolov8 detection + Sort tracking
 
 # requirements
 - python 3.8
