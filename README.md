@@ -2,8 +2,8 @@
 Yolov8 detection + Sort tracking
 
 
-![Untitled Diagram (1)](https://github.com/MohammedAlhashmii/Person-counting-and-monitoring-using-jetson-nano/assets/151768583/801bd383-8f6c-45fb-8898-1d016a1e7155)
 
+![3](https://github.com/MohammedAlhashmii/Person-counting-and-monitoring-using-jetson-nano/assets/151768583/2da76983-ba12-4573-ad3f-b030aa717307)
 
 # requirements
 - python 3.8
