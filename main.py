@@ -6,7 +6,7 @@ from sort import *
 import random
 from collections import defaultdict
 cap = cv2.VideoCapture("Videos/walking.mp4")
-model = YOLO("../yolov8_version/yolov8n.pt")
+model = YOLO("../yolov8_weights/yolov8n.pt")
 print("YOLOV8. 🚀")
 time.sleep(1)
 print("YOLOV8.. 🚀")
