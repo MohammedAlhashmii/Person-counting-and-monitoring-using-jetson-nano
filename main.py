@@ -76,7 +76,7 @@ while True:
                 cv2.putText(img, f'  -{conf}', (x1, y1 - 10),
                              cv2.FONT_HERSHEY_DUPLEX,
                              1, (0, 0, 255), 1)
-                cvzone.putTextRect(img, f' people:{total}', (0, 50), colorT=(0, 255, 0), colorR=(131, 139, 139))
+                cvzone.putTextRect(img, f' Number of people:{total}', (0, 50), colorT=(0, 255, 0), colorR=(131, 139, 139))
 
                 currentArray = np.array([x1, y1, x2, y2, conf])
                 detections = np.vstack((detections, currentArray))
