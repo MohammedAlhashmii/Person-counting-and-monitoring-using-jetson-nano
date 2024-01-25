@@ -17,17 +17,9 @@ cap.set(4, 480) # set video height
 
 
 
-classNames = ["person", "bicycle", "car", "motorbike", "aeroplane", "bus", "train", "truck", "boat",
-              "traffic light", "fire hydrant", "stop sign", "parking meter", "bench", "bird", "cat",
-              "dog", "horse", "sheep", "cow", "elephant", "bear", "zebra", "giraffe", "backpack", "umbrella",
-              "handbag", "tie", "suitcase", "frisbee", "skis", "snowboard", "sports ball", "kite", "baseball bat",
-              "baseball glove", "skateboard", "surfboard", "tennis racket", "bottle", "wine glass", "cup",
-              "fork", "knife", "spoon", "bowl", "banana", "apple", "sandwich", "orange", "broccoli",
-              "carrot", "hot dog", "pizza", "donut", "cake", "chair", "sofa", "pottedplant", "bed",
-              "diningtable", "toilet", "tvmonitor", "laptop", "mouse", "remote", "keyboard", "cell phone",
-              "microwave", "oven", "toaster", "sink", "refrigerator", "book", "clock", "vase", "scissors",
-              "teddy bear", "hair drier", "toothbrush"
-              ]
+my_file = open("coco.txt", "r")
+data = my_file.read()
+class_list = data.split("\n")
 object_detector=cv2.createBackgroundSubtractorMOG2(history=100,varThreshold=10)
 tracker = Sort(max_age = 20, min_hits = 2, iou_threshold = 0.2)
 prev_frame_time = 0
@@ -64,7 +56,7 @@ while True:
             conf = math.ceil((box.conf[0] * 100))/100
             #print(conf)
             cls = int(box.cls[0])
-            currentClass = classNames[cls]
+            currentClass = class_list[cls]
             if totalcount.count(total) == 0:
                 totalcount.append(total)
             if len(str(totalcount)) >= 5:
